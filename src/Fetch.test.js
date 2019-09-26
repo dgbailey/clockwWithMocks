@@ -5,7 +5,7 @@ import '@testing-library/jest-dom/extend-expect'
 import axiosMock from 'axios';
 import Fetch from './Fetch';
 
-test('loads and displays greeting', async () => {
+it('loads and displays greeting', async () => {
   const url = '/greeting'
   const { getByText, getByTestId, ...rest} = render(<Fetch url={url} />)
   
